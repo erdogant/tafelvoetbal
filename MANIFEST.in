@@ -1,0 +1,2 @@
+include tafelvoetbal/data/*.zip
+include tafelvoetbal/data/*.txt
