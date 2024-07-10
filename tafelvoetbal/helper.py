@@ -1,11 +1,10 @@
 import streamlit as st
 from datetime import datetime
+from streamlit_theme import st_theme
 
 # %%
 def theme_color():
-    from streamlit_theme import st_theme
     theme = st_theme()
-    st.session_state['theme'] = theme
     return theme
 
 
