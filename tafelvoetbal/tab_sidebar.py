@@ -35,8 +35,5 @@ def tab_sidebar(welcome_message):
 
 # %%
 def save_score():
-    # Dump to firestore
-    # dump_to_firestore(st.session_state['DATA'], 'flightplans', st.session_state['FLIGHTPLAN_NAME'], overwrite=False)
-
     st.success('Saved', icon="✅")
 

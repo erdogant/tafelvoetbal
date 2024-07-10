@@ -16,23 +16,23 @@ def save_and_refresh_button():
             save_button_tabs = st.button("Save score!", type='primary')
 
             # Set the name if not exists
-            if save_button_tabs and st.session_state['FLIGHTPLAN_NAME'] == '':
-                st.warning('*Flightplan was not initially created. The default name is therefore set to [%s]* ***' %(st.session_state['FLIGHTPLAN_NAME']))
+            if save_button_tabs:
+                st.warning('*Save button')
 
             # Store
             if save_button_tabs:
                 pass
                 # getdatetime = datetime.now().strftime(datetime_format('full'))
-                # st.session_state['DATA']['GENERAL']['NAME'] = st.session_state['FLIGHTPLAN_NAME'].replace('.json', '')
-                # # Dump the flightplan
-                # if st.session_state['DBTYPE']['flightplans'] == 'firestore':
+                # st.session_state['DATA']['GENERAL']['NAME'] = st.session_state['scoreplan'].replace('.json', '')
+                # # Dump the score
+                # if st.session_state['DBTYPE']['scoreplan'] == 'firestore':
                 #     # Dump to firestore
-                #     name_flightplan_wrapped = clean_collection_name_firestore(st.session_state['FLIGHTPLAN_NAME'])
+                #     scoreplan = clean_collection_name_firestore(st.session_state['scoreplan'])
                 #     # Dump in firestore
                 #     db = st.session_state['STORAGE']['firestore']['client']
-                #     db.create_entry(document='flightplans', values={name_flightplan_wrapped: st.session_state['DATA']}, overwrite=False)
+                #     db.create_entry(document='scoreplan', values={scoreplan: st.session_state['DATA']}, overwrite=False)
 
-                st.success('*Flightplan saved:* ***' + st.session_state['FLIGHTPLAN_NAME'] + '***', icon="✅")
+                st.success('*saved:* ***', icon="✅")
 
         with cols[1]:
             refresh_button = st.button('Refresh page!', help='Always update the page to make sure all **new** information is processed.')
