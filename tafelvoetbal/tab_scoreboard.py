@@ -27,7 +27,8 @@ def tab_scoreboard():
 
         # Display the image in the middle
         with top_cols[1]:
-            st.image('./data/tafelvoetbal.png')
+            # st.image('./data/tafelvoetbal.png')
+            st.image('https://raw.githubusercontent.com/erdogant/tafelvoetbal/main/tafelvoetbal/data/tafelvoetbal.png')
 
         # Create the layout for the bottom row (bottom-left and bottom-right)
         bottom_cols = st.columns([1, 2, 1], gap="small")
