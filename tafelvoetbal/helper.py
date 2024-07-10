@@ -1,11 +1,11 @@
 import streamlit as st
 from datetime import datetime
-from streamlit_theme import st_theme
+# from streamlit_theme import st_theme
 
 # %%
-def theme_color():
-    theme = st_theme()
-    return theme
+# def theme_color():
+#     theme = st_theme()
+#     return theme
 
 
 def save_and_refresh_button():
