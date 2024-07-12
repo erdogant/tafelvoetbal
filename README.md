@@ -1,7 +1,5 @@
 # tafelvoetbal
 
-[![Python](https://img.shields.io/pypi/pyversions/tafelvoetbal)](https://img.shields.io/pypi/pyversions/tafelvoetbal)
-[![Pypi](https://img.shields.io/pypi/v/tafelvoetbal)](https://pypi.org/project/tafelvoetbal/)
 [![Docs](https://img.shields.io/badge/Sphinx-Docs-Green)](https://erdogant.github.io/tafelvoetbal/)
 [![LOC](https://sloc.xyz/github/erdogant/tafelvoetbal/?category=code)](https://github.com/erdogant/tafelvoetbal/)
 [![Downloads](https://static.pepy.tech/personalized-badge/tafelvoetbal?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=PyPI%20downloads/month)](https://pepy.tech/project/tafelvoetbal)
@@ -12,7 +10,6 @@
 [![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![DOI](https://zenodo.org/badge/228166657.svg)](https://zenodo.org/badge/latestdoi/228166657)
 [![Medium](https://img.shields.io/badge/Medium-Blog-green)](https://towardsdatascience.com/what-are-tafelvoetbal-loadings-and-biplots-9a7897f2e559)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg?logo=github%20sponsors)](https://erdogant.github.io/tafelvoetbal/pages/html/Documentation.html#colab-notebook)
 ![GitHub Repo stars](https://img.shields.io/github/stars/erdogant/tafelvoetbal)
 ![GitHub repo size](https://img.shields.io/github/repo-size/erdogant/tafelvoetbal)
 [![Donate](https://img.shields.io/badge/Support%20this%20project-grey.svg?logo=github%20sponsors)](https://erdogant.github.io/tafelvoetbal/pages/html/Documentation.html#)
@@ -36,11 +33,9 @@
 ## Blog/Documentation
 
 * [**tafelvoetbal documentation pages (Sphinx)**](https://erdogant.github.io/tafelvoetbal/)
-* [**Notebook with examples**](https://colab.research.google.com/github/erdogant/tafelvoetbal/blob/master/notebooks/tafelvoetbal.ipynb)
 * [**Read more details and usage about tafelvoetbal in this blog!**](https://towardsdatascience.com/tafelvoetbal)
 
 * <a href="https://erdogant.github.io/tafelvoetbal/"> <img src="https://img.shields.io/badge/Sphinx-Docs-Green" alt="Open documentation pages"/> </a> tafelvoetbal documentation pages 
-* <a href="https://colab.research.google.com/github/erdogant/tafelvoetbal/blob/master/notebooks/tafelvoetbal.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open example In Colab"/> </a> Notebook example 
 * <a href="https://towardsdatascience.com/a-step-by-step-guide-for-clustering-images-4b45f9906128"> <img src="https://img.shields.io/badge/Medium-Blog-blue" alt="Open Blog"/> </a> Blog: A step-by-step guide for clustering images 
 
 
