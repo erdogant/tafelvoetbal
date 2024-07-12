@@ -1,6 +1,53 @@
 import streamlit as st
 from datetime import datetime
+# import datetime
+import requests
 # from streamlit_theme import st_theme
+from datetime import time as dttime
+
+
+# %%
+def check_internet_connection(website='https://www.google.com'):
+    """Check internet connection."""
+    try:
+        response = requests.get(website)
+        return response.status_code == 200 or response.status_code == 502
+    except requests.ConnectionError:
+        return False
+
+def timestamp(dt_format='ts'):
+    return datetime.now().strftime(datetime_format(dt_format))
+
+
+def datetime_format(dt_format='full'):
+    """
+    Return the datetime format based on the input dt_format.
+
+    Parameters:
+    dt_format (str): The format type to return. Default is 'full'.
+        'full' : "%d-%m-%Y %H:%M"
+        'ts'   : "%d_%m_%Y_%H%M"
+        'date' : "%d-%m-%Y"
+        'time' : "%H:%M"
+
+    Returns:
+    str: The formatted datetime string.
+
+    Example:
+    >>> datetime_format('full')
+    'dd-mm-yyyy hh:mm:ss'
+    """
+    if dt_format=='ts':
+        return "%d_%m_%Y_%H%M"
+    if dt_format=='tsec':
+        return "%d_%m_%Y_%H%M%S"
+    if dt_format=='full':
+        return "%d-%m-%Y %H:%M"
+    elif dt_format=='date':
+        return "%d-%m-%Y"
+    elif dt_format=='time':
+        return "%H:%M"
+
 
 # %%
 # def theme_color():

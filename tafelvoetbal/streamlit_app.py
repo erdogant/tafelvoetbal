@@ -13,41 +13,32 @@
 import streamlit as st
 from local_params import set_default_local_params
 from tab_scoreboard import tab_scoreboard
-from tab_spelers import tab_spelers
-from tab_settings import tab_settings
+from tab_players import tab_players
+from tab_statistics import tab_statistics
 from tab_sidebar import tab_sidebar
-# import extra_streamlit_components as stx
-from helper import save_and_refresh_button
 
 import warnings
 warnings.filterwarnings("ignore")
-
-# Set local parameters
 set_default_local_params()
-
 
 
 # %% Main
 def main():
     # Create tabs
     welcome_message = 'Tafelvoetbal! 🚀'
-
     # Set tabs after logging in
-    tabs = st.tabs(['Scoreboard', 'Spelers','Settings'])
+    tabs = st.tabs(['Game', 'Account/ Players', 'Statistics'])
 
     # Tabs
     with tabs[0]:
         tab_scoreboard()
     with tabs[1]:
-        tab_spelers()
+        tab_players()
     with tabs[2]:
-        tab_settings()
+        tab_statistics()
 
     # Create the left-sidebar
     tab_sidebar(welcome_message)
-    # Save and refresh button
-    save_and_refresh_button()
-
 
 
 # %% Main
