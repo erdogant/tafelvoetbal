@@ -7,10 +7,9 @@ __pycache__/
 *.so
 
 .pypirc
-tafelvoetbal/.streamlit/*
+tafelvoetbal/.streamlit/secrets.toml
 tafelvoetbal/.streamlit/tafelvoetbal-db-firebase-secrets.json
 tafelvoetbal/.streamlit/tafelvoetbal-db-firebase-secrets.toml
-tafelvoetbal/.streamlit/*.toml
 
 
 # Distribution / packaging

@@ -1,0 +1,6 @@
+[theme]
+base="dark"
+
+# This will show the rerun button when changing the code
+[server]
+fileWatcherType = "poll"
