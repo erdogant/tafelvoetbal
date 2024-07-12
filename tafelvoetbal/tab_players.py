@@ -112,11 +112,12 @@ def manage_accounts():
                     if (user_data is None):
                         st.info(f'{input_accountname} is stored/updated in database.')
                         # Set info
+                        db.create_entry(document='MATCH', overwrite=True)
                         db.create_entry(document='USERS', overwrite=True)
                         db.create_entry(document='settings', overwrite=True)
                         # Store the client for later usage
                         st.session_state['client'] = db
-                        st.session_state['ACCOUNT'] = input_accountname
+                        st.session_state['ACCOUNT'] = input_accountname.strip().lower()
                         st.session_state['PLAYERS'] = []
                         time.sleep(3)
                         st.rerun()

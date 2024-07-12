@@ -23,6 +23,10 @@ def tab_statistics():
         df = pd.DataFrame()
 
         if load_table:
+            if st.session_state['client'] is None:
+                st.error('No account loaded.')
+
+                return
             db = st.session_state['client']
             # Get data
             data = db.get_entry()
@@ -47,7 +51,6 @@ def tab_statistics():
                 rows.append(row)
             # Create DataFrame from the list of rows
             df = pd.DataFrame(rows, columns=['team1_player1', 'team1_player2', 'team2_player1', 'team2_player2', 'score team 1', 'score team 2', 'total_time_in_minutes', 'team1_time_variation_between_goals_in_minutes', 'team2_time_variation_between_goals_in_minutes'])
-
             st.write(df)
 
 
