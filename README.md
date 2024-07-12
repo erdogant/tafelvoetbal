@@ -4,7 +4,6 @@
 [![LOC](https://sloc.xyz/github/erdogant/tafelvoetbal/?category=code)](https://github.com/erdogant/tafelvoetbal/)
 [![Downloads](https://static.pepy.tech/personalized-badge/tafelvoetbal?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=PyPI%20downloads/month)](https://pepy.tech/project/tafelvoetbal)
 [![Downloads](https://static.pepy.tech/personalized-badge/tafelvoetbal?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/tafelvoetbal)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/erdogant/tafelvoetbal/blob/master/LICENSE)
 [![Forks](https://img.shields.io/github/forks/erdogant/tafelvoetbal.svg)](https://github.com/erdogant/tafelvoetbal/network)
 [![Issues](https://img.shields.io/github/issues/erdogant/tafelvoetbal.svg)](https://github.com/erdogant/tafelvoetbal/issues)
 [![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
