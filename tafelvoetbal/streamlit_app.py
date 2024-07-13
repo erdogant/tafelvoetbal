@@ -16,6 +16,7 @@ from tab_scoreboard import tab_scoreboard
 from tab_players import tab_players
 from tab_statistics import tab_statistics
 from tab_sidebar import tab_sidebar
+from helper import ethical_adds
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -37,6 +38,8 @@ def main():
     with tabs[2]:
         tab_statistics()
 
+    # Ethical adds
+    ethical_adds()
     # Create the left-sidebar
     tab_sidebar(welcome_message)
 

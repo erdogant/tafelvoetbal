@@ -4,8 +4,23 @@ from datetime import datetime
 import requests
 # from streamlit_theme import st_theme
 from datetime import time as dttime
+import streamlit.components.v1 as components
 
 
+# %%
+def ethical_adds():
+    # Your HTML and JavaScript code
+    html_code = """
+    <br>
+    <center>
+        <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+        <div data-ea-publisher="erdogantgithubio" data-ea-type="text"></div>
+    </center>
+    """
+
+    # Embedding the HTML code in the Streamlit app
+    components.html(html_code, height=200)
+    
 # %%
 def check_internet_connection(website='https://www.google.com'):
     """Check internet connection."""
